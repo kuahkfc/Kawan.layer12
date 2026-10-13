@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kawan Layer | Barang 3D Print Lucu & Bermanfaat</title>
+<style>
+:root{--bg:#fffaf3;--card:#fff;--ink:#1f2937;--mute:#6b7280;--brand:#ff6b4a;--brand2:#2d6a4f;--line:#f0e6d8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17130f;--card:#231d17;--ink:#f5efe6;--mute:#a79f94;--line:#3a3128}}
+:root[data-theme="dark"]{--bg:#17130f;--card:#231d17;--ink:#f5efe6;--mute:#a79f94;--line:#3a3128}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;font-size:1.15rem}.logo span{color:var(--brand)}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:700;border:0;cursor:pointer;font-size:1rem}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.hero{padding:64px 0 48px;display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:0 0 16px}
+.hero h1 em{color:var(--brand);font-style:normal}
+.hero p{color:var(--mute);font-size:1.1rem;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.blob{aspect-ratio:1;border-radius:36% 64% 55% 45%/50% 40% 60% 50%;background:linear-gradient(135deg,var(--brand),#ffb347);display:grid;place-items:center;font-size:7rem}
+h2{font-size:1.8rem;margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 28px}
+section{padding:40px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.ic{font-size:2.4rem}
+.pic{background:linear-gradient(135deg,#fff1e0,#ffdcc2);border-radius:14px;aspect-ratio:1/1;display:grid;place-items:center;margin-bottom:6px}
+.pic svg{width:78%;height:78%}
+.tag{align-self:flex-start;background:var(--brand2);color:#fff;font-size:.7rem;font-weight:700;padding:2px 10px;border-radius:999px}
+.card h3{margin:0;font-size:1.02rem}
+.card p{margin:0;color:var(--mute);font-size:.9rem;flex:1}
+.price{font-weight:800;color:var(--brand2)}
+.card .btn{padding:9px 14px;font-size:.9rem;text-align:center;margin-top:6px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.why b{display:block;margin-bottom:4px}
+.contact{background:var(--brand2);color:#fff;border-radius:24px;padding:36px;text-align:center}
+.contact p{opacity:.9}
+.contact .btn{background:#fff;color:var(--brand2)}
+footer{padding:28px 0;color:var(--mute);text-align:center;font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:36px}.blob{max-width:240px;font-size:5rem}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;600;800&display=swap">
+<style>
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#fbf9ff;--ink:#1d1b2e;--mute:#5f5c76;--card:#fff;--line:#1d1b2e;--hero:#e7e0ff;--brand:#5b3df5;--onbrand:#fff;--pink:#ffc6d9;--mint:#bdf0d6;--butter:#ffe48a;--lilac:#d9d0ff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14121f;--ink:#f3f0ff;--mute:#aaa6c4;--card:#1e1b30;--line:#f3f0ff;--hero:#251f45;--brand:#a38fff;--onbrand:#14121f}}
+:root[data-theme="dark"]{--bg:#14121f;--ink:#f3f0ff;--mute:#aaa6c4;--card:#1e1b30;--line:#f3f0ff;--hero:#251f45;--brand:#a38fff;--onbrand:#14121f}
+body{font-family:"Figtree","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,.logo{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;line-height:1.1}
+header{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:2px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.3rem;font-weight:800}
+.logo::before{content:"";width:24px;height:22px;border-radius:6px;border:2px solid var(--line);background:linear-gradient(var(--pink) 0 33%,var(--butter) 33% 66%,var(--mint) 66%)}
+.logo span{color:var(--brand)}
+.btn{background:var(--brand);color:var(--onbrand);border:2px solid var(--line);box-shadow:3px 3px 0 var(--line);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
+.btn.alt{background:var(--card);color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.hero{margin-top:24px;padding:48px 40px;border:2px solid var(--line);border-radius:32px;background:repeating-linear-gradient(0deg,transparent 0 13px,rgba(91,61,245,.12) 13px 15px),var(--hero)}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.8rem);line-height:1.03;font-weight:800}
+.hero p{font-size:1.1rem;color:var(--ink);opacity:.8}
+.collage{position:relative;height:360px}
+.collage .t{position:absolute;border:2px solid #1d1b2e;border-radius:22px;box-shadow:6px 6px 0 #1d1b2e;padding:12px}
+.collage .t svg{width:100%;height:100%;display:block}
+.t1{width:44%;aspect-ratio:1;left:2%;top:8%;transform:rotate(-6deg);background:var(--pink)}
+.t2{width:48%;aspect-ratio:1;right:0;top:0;transform:rotate(5deg);background:var(--butter)}
+.t3{width:42%;aspect-ratio:1;left:30%;bottom:0;transform:rotate(2deg);background:var(--mint)}
+.stk{position:absolute;right:6%;bottom:6%;width:96px;height:96px;border-radius:50%;background:#1d1b2e;color:#ffe48a;display:grid;place-items:center;text-align:center;font:800 .95rem/1.1 "Bricolage Grotesque",sans-serif;transform:rotate(12deg)}
+.mq{margin:28px 0 0;overflow:hidden;background:#1d1b2e;color:#ffe48a;border-radius:999px;border:2px solid var(--line)}
+.mq-in{display:flex;gap:28px;width:max-content;padding:12px 28px 12px 0;animation:mq 30s linear infinite;font:800 1.05rem "Bricolage Grotesque",sans-serif}
+.mq-in span{white-space:nowrap}.mq-in i{width:10px;height:10px;background:#bdf0d6;border-radius:3px;align-self:center;flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+.card{border:2px solid var(--line);border-radius:24px;box-shadow:5px 5px 0 var(--line);padding:16px;gap:8px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--line)}
+.card h3{font-size:1.08rem;font-weight:800}
+.pic{border:2px solid #1d1b2e;border-radius:16px}
+.grid>.card:nth-child(4n+1) .pic{background:var(--pink)}.grid>.card:nth-child(4n+2) .pic{background:var(--mint)}.grid>.card:nth-child(4n+3) .pic{background:var(--butter)}.grid>.card:nth-child(4n+4) .pic{background:var(--lilac)}
+.price{font:800 1.15rem "Bricolage Grotesque",sans-serif;color:var(--brand)}
+.tag{background:var(--butter);color:#1d1b2e;border:2px solid #1d1b2e;font-size:.72rem;padding:1px 10px}
+#signature{background:#1d1b2e;color:#f3f0ff;border-radius:36px;padding:48px 32px;margin:56px auto;width:calc(100% - 24px);border:2px solid var(--line)}
+#signature .sub{color:#b9b4d8}
+#signature .card{background:#2a2745;border-color:#f3f0ff;box-shadow:5px 5px 0 #f3f0ff;color:#f3f0ff}
+#signature .card p{color:#c6c1e4}#signature .price{color:#bdf0d6}
+#signature .btn{background:#ffe48a;color:#1d1b2e;border-color:#f3f0ff;box-shadow:3px 3px 0 #f3f0ff}
+.why div{border:2px solid var(--line);border-radius:22px;color:#1d1b2e;box-shadow:5px 5px 0 var(--line)}
+.why b{font:800 1.1rem "Bricolage Grotesque",sans-serif}
+.why div:nth-child(1){background:var(--pink)}.why div:nth-child(2){background:var(--mint)}.why div:nth-child(3){background:var(--butter)}.why div:nth-child(4){background:var(--lilac)}
+.contact{background:var(--butter);color:#1d1b2e;border:2px solid var(--line);box-shadow:8px 8px 0 var(--line);border-radius:32px}
+.contact h2{font-size:clamp(1.8rem,4vw,2.6rem)}.contact p{opacity:1}
+.contact .btn{background:#1d1b2e;color:#ffe48a;border-color:#1d1b2e}
+@media(max-width:760px){.hero{padding:28px 20px}.collage{height:300px}#signature{padding:36px 18px}}
+@media (prefers-reduced-motion:reduce){.mq-in{animation:none}.btn,.card{transition:none}}
+.hero{background:repeating-linear-gradient(0deg,transparent 0 13px,rgba(255,255,255,.14) 13px 15px),#6c4cff;position:relative;overflow:hidden}
+.hero>*{position:relative;z-index:1}
+.hero::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:#ffc6d9;right:-45px;top:-45px;border:2px solid #1d1b2e}
+.hero::after{content:"";position:absolute;left:-34px;bottom:-34px;width:110px;height:110px;background:#bdf0d6;border:2px solid #1d1b2e;transform:rotate(20deg);border-radius:28px}
+.hero h1,.hero p{color:#fff;opacity:1}.hero p{opacity:.92}
+.hero .btn{background:#ffe48a;color:#1d1b2e;border-color:#1d1b2e;box-shadow:3px 3px 0 #1d1b2e}
+.hero .btn.alt{background:#fff}
+.hero .btn:hover{box-shadow:1px 1px 0 #1d1b2e}
+.collage .t{animation:bob 4s ease-in-out infinite}.t2{animation-delay:-1.3s!important}.t3{animation-delay:-2.6s!important}
+.stk{animation:spin 14s linear infinite}
+@keyframes bob{50%{translate:0 -10px}}@keyframes spin{to{rotate:360deg}}
+section>h2{text-decoration:underline wavy var(--brand);text-decoration-thickness:3px;text-underline-offset:8px}
+#signature h2{text-decoration-color:#ffe48a}
+.card{position:relative;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .2s,rotate .25s}
+.grid>.card:nth-child(odd){rotate:-1deg}.grid>.card:nth-child(even){rotate:1deg}
+.card:hover{rotate:0deg;transform:translate(-2px,-5px) scale(1.03)}
+.card[hidden]{display:none}
+.card[data-s]::after{content:attr(data-s);position:absolute;top:-12px;right:-8px;background:#ff5c8a;color:#fff;border:2px solid #1d1b2e;border-radius:999px;padding:2px 11px;font:800 .75rem "Figtree",sans-serif;rotate:8deg}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}
+.chip{font:800 .95rem "Figtree",sans-serif;padding:8px 18px;border:2px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer;box-shadow:3px 3px 0 var(--line)}
+.chip[aria-pressed="true"]{background:var(--brand);color:var(--onbrand)}
+@media (prefers-reduced-motion:reduce){.collage .t,.stk{animation:none}.card{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="logo">Kawan<span>Layer</span></div><a class="btn" href="#produk">Lihat Produk</a></div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div>
+    <h1>Mejamu butuh kawan. Kami cetak, kamu pamerin.</h1>
+    <p>Lucu, berguna, dan bisa diberi namamu. Bikin meja kerja, kamar, sampai kado jadi jauh lebih seru.</p>
+    <div class="cta"><a class="btn" href="#produk">Belanja Sekarang</a><a class="btn alt" href="#kontak">Pesan Custom</a></div>
+  </div>
+  <div class="collage" aria-hidden="true"><div class="t t1"></div><div class="t t2"></div><div class="t t3"></div><div class="stk">bisa<br>custom!</div></div>
+</div>
+
+<div class="mq" aria-hidden="true"><div class="mq-in"><span>Lucu</span><i></i><span>Berguna</span><i></i><span>Bisa custom</span><i></i><span>Dicetak sendiri</span><i></i><span>Siap jadi kado</span><i></i></div></div>
+<section id="produk">
+  <h2>10 Produk Harian</h2>
+  <p class="sub">Pilih warna favoritmu. Semua bisa custom nama atau logo.</p>
+  <div class="chips" id="chips"><button class="chip" data-f="semua" aria-pressed="true">Semua</button><button class="chip" data-f="meja" aria-pressed="false">Meja kerja</button><button class="chip" data-f="rumah" aria-pressed="false">Rumah</button><button class="chip" data-f="kado" aria-pressed="false">Kado</button></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section>
+  <h2>Kenapa Kawan Layer?</h2>
+  <p class="sub">Dibuat dengan teliti, dikirim dengan rapi.</p>
+  <div class="why">
+    <div><b>🎨 Bisa Custom</b>Nama, logo, foto, dan warna sesuai keinginan.</div>
+    <div><b>🛠️ Dicetak Sendiri</b>Kualitas terkontrol dari desain sampai packing.</div>
+    <div><b>🎁 Siap Jadi Kado</b>Souvenir, hadiah wisuda, wedding, dan event.</div>
+    <div><b>🏢 Pesanan Partai</b>Merchandise perusahaan dengan harga khusus.</div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="contact">
+    <h2>Mau pesan atau custom?</h2>
+    <p>Kirim ide kamu lewat WhatsApp, kami balas secepatnya.</p>
+    <a class="btn" id="wa" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<section class="wrap" id="signature">
+<h2>Koleksi Signature</h2>
+<p class="sub">Koleksi spesial yang warna dan ukurannya bisa kamu atur sendiri.</p>
+<div class="grid sig" id="sig"></div>
+</section>
+<footer>© 2026 Kawan Layer. Semua hak dilindungi.</footer>
+
+<script>
+// Ganti nomor WhatsApp (format internasional tanpa +, contoh 6281234567890)
+var WA = "6282125439017";
+var items = [
+ ["📱","Phone Stand Karakter","Dudukan HP lucu untuk meja, nonton, dan video call.",35000],
+ ["🔌","Cable Buddy","Pengatur kabel charger dan headset agar meja rapi.",20000],
+ ["🪴","Mini Planter Geometris","Pot kecil untuk sukulen dan kaktus.",45000],
+ ["🔑","Gantungan Kunci Custom","Cetak nama kamu, cocok untuk souvenir.",15000],
+ ["🎧","Headphone Hanger","Gantungan headphone yang menempel di tepi meja.",45000],
+ ["✏️","Pen Holder Hewan","Tempat pensil berbentuk hewan lucu.",55000],
+ ["📎","Clip Snack Karakter","Penjepit kemasan snack, kertas, dan kabel.",12000],
+ ["🐉","Articulated Dragon","Mainan fidget yang bisa digerakkan, pereda stres.",75000],
+ ["🪝","Hook Tempel Serbaguna","Set 3 pengait untuk kunci, tas, dan handuk.",25000],
+ ["💡","Lampu Lithophane Foto","Lampu tidur dengan fotomu, kado yang berkesan.",150000],
+ ["🛋️","Lampu Meja Parametrik","Lampu dekoratif berdesain unik untuk meja dan kamar.",650000,1],
+ ["🧍","Custom Figurine dari Foto","Miniatur dirimu, pasangan, atau hewan peliharaan.",850000,1],
+ ["🗂️","Desk Organizer Modular Set","Organizer HP, alat tulis, kabel, dan laptop dalam satu set.",550000,1],
+ ["🏺","Vas Dekor Spiral Set","Set vas hias untuk bunga kering dan dekorasi rumah.",600000,1],
+ ["🏠","Miniatur Rumah Custom","Maket rumah, ruko, atau kantor untuk hadiah dan presentasi.",1000000,1]
+];
+function S(x){return '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">'+x+'</svg>';}
+var ART=[
+ S('<path d="M22 88h56l-8-18H30z" fill="#ff6b4a"/><rect x="30" y="14" width="40" height="62" rx="6" fill="#3d2c1e"/><rect x="34" y="19" width="32" height="50" rx="3" fill="#bde0fe"/><circle cx="43" cy="40" r="2.5" fill="#3d2c1e"/><circle cx="57" cy="40" r="2.5" fill="#3d2c1e"/><path d="M44 49q6 5 12 0" stroke="#3d2c1e" stroke-width="2" fill="none"/>'),
+ S('<path d="M50 42V24q0-10 14-10" stroke="#3d2c1e" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="22" y="40" width="56" height="34" rx="17" fill="#ffd166"/><circle cx="39" cy="56" r="3" fill="#3d2c1e"/><circle cx="61" cy="56" r="3" fill="#3d2c1e"/><path d="M45 64q5 4 10 0" stroke="#3d2c1e" stroke-width="2" fill="none"/>'),
+ S('<rect x="44" y="20" width="12" height="40" rx="6" fill="#2d6a4f"/><rect x="30" y="34" width="8" height="22" rx="4" fill="#2d6a4f"/><rect x="30" y="48" width="20" height="8" rx="4" fill="#2d6a4f"/><rect x="62" y="30" width="8" height="22" rx="4" fill="#2d6a4f"/><rect x="50" y="44" width="20" height="8" rx="4" fill="#2d6a4f"/><path d="M26 58h48l-8 28H34z" fill="#ff6b4a"/><path d="M38 58l6 28M50 58v28M62 58l-6 28" stroke="#e5533a" stroke-width="2"/>'),
+ S('<circle cx="50" cy="22" r="10" fill="none" stroke="#9aa5b1" stroke-width="4"/><rect x="24" y="34" width="52" height="36" rx="10" fill="#9d7be0"/><text x="50" y="58" text-anchor="middle" font-size="16" font-weight="800" fill="#fff" font-family="sans-serif">NAMA</text>'),
+ S('<rect x="44" y="10" width="12" height="40" rx="5" fill="#2d6a4f"/><path d="M30 80V62a20 20 0 0 1 40 0v18" stroke="#3d2c1e" stroke-width="6" fill="none"/><rect x="23" y="66" width="14" height="24" rx="6" fill="#ff6b4a"/><rect x="63" y="66" width="14" height="24" rx="6" fill="#ff6b4a"/>'),
+ S('<rect x="45" y="10" width="3" height="34" fill="#5aa9e6"/><rect x="51" y="8" width="3" height="36" fill="#ff6b4a"/><rect x="57" y="12" width="3" height="32" fill="#2d6a4f"/><rect x="26" y="40" width="48" height="46" rx="10" fill="#ffb347"/><path d="M26 46l3-20 14 12zM74 46l-3-20-14 12z" fill="#ffb347"/><circle cx="40" cy="62" r="3" fill="#3d2c1e"/><circle cx="60" cy="62" r="3" fill="#3d2c1e"/><path d="M45 70q5 4 10 0" stroke="#3d2c1e" stroke-width="2" fill="none"/>'),
+ S('<rect x="28" y="64" width="44" height="22" rx="3" fill="#ffd166"/><rect x="16" y="30" width="68" height="36" rx="16" fill="#ff9ecb"/><circle cx="38" cy="46" r="3.5" fill="#3d2c1e"/><circle cx="62" cy="46" r="3.5" fill="#3d2c1e"/><path d="M42 54q8 9 16 0z" fill="#fff"/>'),
+ S('<g fill="#2d6a4f"><circle cx="20" cy="76" r="5"/><circle cx="30" cy="72" r="7"/><circle cx="43" cy="68" r="9"/><circle cx="57" cy="62" r="10"/><circle cx="69" cy="52" r="11"/></g><g fill="#52b788"><circle cx="36" cy="70" r="3"/><circle cx="50" cy="65" r="3"/><circle cx="63" cy="57" r="3"/></g><circle cx="76" cy="34" r="14" fill="#2d6a4f"/><path d="M68 24l-4-12 10 6zM84 24l4-12-10 6z" fill="#ffb347"/><circle cx="72" cy="32" r="3" fill="#fff"/><circle cx="72" cy="32" r="1.5" fill="#3d2c1e"/><path d="M70 42q6 3 12 0" stroke="#ff6b4a" stroke-width="2" fill="none"/>'),
+ S('<g fill="none" stroke="#2d6a4f" stroke-width="7" stroke-linecap="round"><path d="M24 20v36a8 8 0 0 0 16 0"/><path d="M46 20v36a8 8 0 0 0 16 0"/><path d="M68 20v36a8 8 0 0 0 16 0"/></g><rect x="12" y="12" width="76" height="9" rx="4" fill="#9d7be0"/><circle cx="32" cy="72" r="6" fill="none" stroke="#ffb347" stroke-width="3"/>'),
+ S('<rect x="22" y="14" width="56" height="62" rx="6" fill="#fff3d0" stroke="#ffb347" stroke-width="3"/><circle cx="60" cy="32" r="7" fill="#ffd166"/><path d="M26 72l18-24 12 14 8-8 14 18z" fill="#c9a96e"/><rect x="16" y="76" width="68" height="10" rx="4" fill="#3d2c1e"/>'),
+ S('<path d="M32 14h36l10 36H22z" fill="#ff6b4a"/><path d="M40 14l-6 36M50 14v36M60 14l6 36" stroke="#e5533a" stroke-width="2"/><rect x="47" y="50" width="6" height="28" fill="#3d2c1e"/><ellipse cx="50" cy="82" rx="20" ry="5" fill="#3d2c1e"/><path d="M30 56q20 12 40 0" stroke="#ffd166" stroke-width="3" fill="none"/>'),
+ S('<rect x="26" y="80" width="48" height="8" rx="3" fill="#3d2c1e"/><path d="M32 80q0-24 18-24t18 24z" fill="#5aa9e6"/><circle cx="50" cy="38" r="17" fill="#ffd9b0"/><path d="M33 36q2-20 17-20t17 20q-8-9-17-9t-17 9z" fill="#3d2c1e"/><circle cx="44" cy="42" r="2.2" fill="#3d2c1e"/><circle cx="56" cy="42" r="2.2" fill="#3d2c1e"/><path d="M45 49q5 4 10 0" stroke="#3d2c1e" stroke-width="2" fill="none"/>'),
+ S('<rect x="22" y="28" width="3" height="26" fill="#ff6b4a"/><rect x="28" y="24" width="3" height="30" fill="#5aa9e6"/><rect x="44" y="20" width="12" height="34" rx="2" fill="#3d2c1e"/><rect x="16" y="46" width="68" height="38" rx="6" fill="#52b788"/><rect x="20" y="52" width="18" height="28" rx="3" fill="#2d6a4f"/><rect x="41" y="52" width="18" height="28" rx="3" fill="#2d6a4f"/><rect x="62" y="52" width="18" height="28" rx="3" fill="#2d6a4f"/>'),
+ S('<path d="M42 40V16M42 40l-9-18M42 40l9-20" stroke="#2d6a4f" stroke-width="2.5" fill="none"/><circle cx="42" cy="14" r="4" fill="#ff6b4a"/><circle cx="32" cy="20" r="3.5" fill="#ffd166"/><circle cx="52" cy="18" r="3.5" fill="#9d7be0"/><path d="M30 40q-8 20 0 46h24q8-26 0-46z" fill="#ffb347"/><path d="M32 54q10 6 20 0M30 66q12 6 24 0M31 78q11 6 22 0" stroke="#e59b2e" stroke-width="2" fill="none"/><path d="M66 58q-6 12 0 28h18q6-16 0-28z" fill="#ff9ecb"/>'),
+ S('<rect x="24" y="48" width="52" height="36" fill="#ffd166"/><path d="M16 50l34-30 34 30z" fill="#ff6b4a"/><rect x="44" y="62" width="12" height="22" rx="2" fill="#3d2c1e"/><rect x="30" y="56" width="10" height="10" fill="#bde0fe"/><rect x="60" y="56" width="10" height="10" fill="#bde0fe"/><rect x="12" y="84" width="76" height="6" rx="3" fill="#3d2c1e"/>')
+];
+var rp=function(n){return "Rp "+n.toLocaleString("id-ID")};
+items=items.filter(function(x){return !x[4]});var g=document.getElementById("grid");
+items.forEach(function(it,i){
+  var c=document.createElement("div");c.className="card";
+  c.innerHTML=(it[4]?'<span class="tag">Premium</span>':'')+'<div class="pic">'+(ART[i]||it[0])+'</div><h3>'+it[1]+'</h3><p>'+it[2]+'</p><div class="price">'+rp(it[3])+'</div>';
+  var a=document.createElement("a");a.className="btn";a.target="_blank";a.rel="noopener";a.textContent="Pesan via WhatsApp";
+  a.href="https://wa.me/"+WA+"?text="+encodeURIComponent("Halo, saya mau pesan "+it[1]);
+  c.appendChild(a);g.appendChild(c);
+});
+document.getElementById("wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent("Halo, saya mau tanya pesanan custom");
+</script>
+<script>
+(function(){
+var ix=[7,9,5],t=document.querySelectorAll(".collage .t");
+for(var i=0;i<t.length;i++){t[i].innerHTML=ART[ix[i]]}
+var m=document.querySelector(".mq-in");m.innerHTML+=m.innerHTML;
+var cats=["meja","meja","rumah kado","kado","meja","meja kado","rumah","kado meja","rumah","kado rumah"],st={0:"Laris!",7:"Favorit",9:"Kado top"};
+var cs=document.querySelectorAll("#grid .card");
+cs.forEach(function(c,i){c.dataset.cat=cats[i];if(st[i])c.dataset.s=st[i]});
+var bs=document.querySelectorAll(".chip");
+bs.forEach(function(b){b.addEventListener("click",function(){
+ bs.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+ var f=b.dataset.f;cs.forEach(function(c){c.hidden=f!=="semua"&&c.dataset.cat.split(" ").indexOf(f)<0})})});
+var G=[
+ S('<ellipse cx="50" cy="86" rx="28" ry="6" fill="#d9b86c"/><path d="M30 84q0-30 20-30t20 30z" fill="#b0449b"/><circle cx="50" cy="42" r="20" fill="#b0449b"/><path d="M34 30l-8-18 16 10zM66 30l8-18-16 10z" fill="#e6a8e6"/><path d="M26 44a24 24 0 0 1 48 0" stroke="#222" stroke-width="5" fill="none"/><rect x="21" y="40" width="9" height="16" rx="4" fill="#222"/><rect x="70" y="40" width="9" height="16" rx="4" fill="#222"/><circle cx="43" cy="42" r="3" fill="#fff"/><circle cx="57" cy="42" r="3" fill="#fff"/><circle cx="43" cy="42" r="1.5" fill="#222"/><circle cx="57" cy="42" r="1.5" fill="#222"/><path d="M44 54q6 4 12 0" stroke="#fff" stroke-width="2" fill="none"/>'),
+ S('<ellipse cx="50" cy="86" rx="32" ry="7" fill="#9ad0f5"/><path d="M62 84C84 70 76 56 64 50C52 44 70 30 56 22" stroke="#f4a6c0" stroke-width="12" fill="none" stroke-linecap="round"/><g fill="#e58aa8"><circle cx="76" cy="68" r="3"/><circle cx="72" cy="55" r="3"/><circle cx="62" cy="46" r="3"/><circle cx="66" cy="32" r="3"/></g><path d="M34 50V34a18 18 0 0 1 36 0v16" stroke="#9ad0f5" stroke-width="5" fill="none"/><rect x="28" y="46" width="12" height="20" rx="6" fill="#f2c78a"/><rect x="64" y="46" width="12" height="20" rx="6" fill="#f2c78a"/>'),
+ S('<rect x="14" y="70" width="72" height="14" rx="5" fill="#f1e7d6"/><rect x="14" y="40" width="72" height="30" rx="6" fill="#9caf88"/><rect x="18" y="44" width="16" height="22" rx="3" fill="#b7c7a3"/><rect x="37" y="44" width="16" height="22" rx="3" fill="#b7c7a3"/><rect x="56" y="44" width="16" height="22" rx="3" fill="#b7c7a3"/><rect x="60" y="14" width="22" height="40" rx="4" fill="#3d2c1e" transform="rotate(10 71 34)"/><rect x="20" y="22" width="3" height="24" fill="#ff6b4a"/><rect x="26" y="18" width="3" height="28" fill="#5aa9e6"/>'),
+ S('<ellipse cx="50" cy="78" rx="38" ry="12" fill="#f4b6c2"/><ellipse cx="50" cy="74" rx="32" ry="8" fill="#f9c9d4"/><path d="M24 74V46a26 26 0 0 1 52 0v28" stroke="#f4b6c2" stroke-width="7" fill="none"/><circle cx="26" cy="52" r="5" fill="#fbd6df"/><circle cx="29" cy="38" r="5" fill="#fbd6df"/><circle cx="74" cy="52" r="5" fill="#fbd6df"/><circle cx="71" cy="38" r="5" fill="#fbd6df"/><path d="M50 20l-14-8v16zM50 20l14-8v16z" fill="#f09db0"/><circle cx="50" cy="20" r="4" fill="#e97a97"/><rect x="38" y="62" width="9" height="14" rx="2" fill="#e3a857"/><rect x="56" y="68" width="14" height="6" rx="3" fill="#e97a97"/>'),
+ S('<circle cx="50" cy="53" r="42" fill="#ffd58a" opacity=".35"/><rect x="26" y="84" width="48" height="6" rx="2" fill="#c99a62"/><rect x="28" y="22" width="44" height="62" fill="#fff2d6" stroke="#c99a62" stroke-width="4"/><path d="M50 22v62M28 43h44M28 64h44" stroke="#c99a62" stroke-width="3"/><rect x="24" y="14" width="52" height="8" rx="2" fill="#c99a62"/>'),
+ S('<rect x="26" y="82" width="48" height="8" rx="3" fill="#3d2c1e"/><path d="M36 82q0-14 14-14t14 14z" fill="#5aa9e6"/><circle cx="50" cy="42" r="24" fill="#ffd9b0"/><path d="M26 40q0-26 24-26t24 26q-10-12-24-12t-24 12z" fill="#3d2c1e"/><circle cx="41" cy="46" r="6" fill="none" stroke="#3d2c1e" stroke-width="2"/><circle cx="59" cy="46" r="6" fill="none" stroke="#3d2c1e" stroke-width="2"/><path d="M47 46h6" stroke="#3d2c1e" stroke-width="2"/><path d="M43 56q7 6 14 0" stroke="#3d2c1e" stroke-width="2.5" fill="none"/>')
+],
+L=[["Naga Gamer Stand","Patung naga untuk headphone dan console genggam.",1750000,"Signature","Baru"],
+["Gurita Headphone Stand","Tentakel pastel pemegang headphone.",850000,"Premium",""],
+["Desk Organizer Modular Pro","Dock HP, tempat pena, dan lubang kabel dalam satu set.",1250000,"Premium",""],
+["Coquette Vanity Tray","Nampan dengan lengkung bunga dan pita untuk parfum dan perhiasan.",1450000,"Signature","Hits"],
+["Lampu Shoji Kayu","Lampu meja gaya Jepang dengan panel yang menyala hangat.",1950000,"Signature",""],
+["Custom Figurine dari Foto","Miniatur dirimu dari foto. Harga menyesuaikan ukuran dan detail.",2500000,"Custom","Baru"]];
+var sg=document.getElementById("sig");
+L.forEach(function(it,i){
+ var c=document.createElement("div");c.className="card";if(it[4])c.dataset.s=it[4];
+ c.innerHTML='<span class="tag">'+it[3]+'</span><div class="pic">'+G[i]+'</div><h3>'+it[0]+'</h3><p>'+it[1]+'</p><div class="price">mulai Rp '+it[2].toLocaleString("id-ID")+'</div>';
+ var a=document.createElement("a");a.className="btn";a.target="_blank";a.rel="noopener";a.textContent="Pesan via WhatsApp";
+ a.href="https://wa.me/"+WA+"?text="+encodeURIComponent("Halo, saya mau pesan "+it[0]);
+ c.appendChild(a);sg.appendChild(c)});
+})();
+</script>
+</body>
+</html>
